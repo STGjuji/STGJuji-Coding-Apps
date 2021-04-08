@@ -59,11 +59,52 @@ def valid(bo, pos, num):
     # Check box
 
     box_x = pos [1]//3
-
     box_y = pos [0]//3
 
     for i in range(box_y*3, box_y*3 + 3):
     	for j in range(box_x*3, box_x*3 + 3):
     		if bo[i][j] == num and (i,j) != pos:
     			return False
-    		    	
+
+
+
+
+    return True
+
+
+
+    def find_empty(bo):
+
+    """
+    finds an empty space in the board
+    :param bo: partially complete board
+    :return: (int, int) row col
+   
+    """	
+
+    for i in range(len(bo)):
+    	for j in range(len(bo[0])):
+    		if bo[i][j] ==0:
+    			return (i, j)
+
+
+    return None
+
+
+
+
+def print_board(bo):
+
+	"""
+    prints the board
+    :param bo: 2d List of ints
+    :return: None
+    """
+
+    for i in range(len(bo)):
+    	if i % 3 == 0 and i != 0:
+    		print("- - - - - - - - - - - - - -")
+
+
+
+
