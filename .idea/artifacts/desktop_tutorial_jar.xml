@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="desktop-tutorial:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/desktop_tutorial_jar</output-path>
+    <root id="archive" name="desktop-tutorial.jar">
+      <element id="module-output" name="desktop-tutorial" />
+    </root>
+  </artifact>
+</component>
